@@ -1,0 +1,6 @@
+$(function(){
+
+	new Avatar('.archer');
+
+
+});

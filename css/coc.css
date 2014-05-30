@@ -1,0 +1,41 @@
+.avatar {
+	width: 80px;
+	height: 80px;
+	background-repeat: no-repeat;
+	background-size: contain;
+	position: relative;
+}
+
+.avatar.archer{ background-image: url(../img/troops/archer.jpg); }
+
+
+.star-bar {
+	position: absolute;
+	bottom: 0;
+}
+
+.star {
+	width: 11px;
+	height: 12px;
+	background-image: url(../img/other/purple_star.png);
+	display: inline-block;
+}
+
+	.star:first-child { margin-left: 4px; }
+
+
+.lv {
+	width: 30px;	
+	height: 18px;
+	border-radius: 3px;
+	background-color: #000;
+	position: absolute;
+	color: #fff;
+	font-size: 1rem;
+	padding: 3px;
+	opacity: 0.6;	
+	left: 5px;
+}
+
+.lv.up { top: 5px; }
+.lv.down { top: 25px; }
