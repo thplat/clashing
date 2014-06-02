@@ -9,7 +9,7 @@ var Avatar = function(el) {
 
 		this.avatar = $(el);
 		this.type = el.substring(1);
-		if(!this.avatar.hasClass('avatar'))
+		if(!this.avatar.hasClass('avatar-wrapper'))
 			throw new Error('An avatar class has to be assigned to an avatar Element');
 
 		Template.load('partials/avatar.html').attachTo(this.avatar, function(){
