@@ -51,11 +51,47 @@
 					</div>				
 				</div>
 				<div class="row" style="margin-top: 15px;">
-					<div class="col-md-3">
+					<div class="col-md-6">
+						<h3>Kaserne Level <span class="barrack-level">1</span></h3>
+
+						<div class="row">
+							<div class="col-md-12">
+								
+							</div>
+						</div>
+
 						<table class="table">
 							<tr>
-								<td>Level 1</td>
-								<td>Kaserne</td>
+								<td colspan="4">
+									<img src="img/troops/barbarian_50.jpg">
+									<img src="img/troops/archer_50.jpg">
+									<img src="img/troops/goblin_50.jpg">
+									<img src="img/troops/giant_50.jpg">
+									<img src="img/troops/wallbreaker_50.jpg">
+									<img src="img/troops/balloon_50.jpg">
+									<img src="img/troops/wizard_50.jpg">
+									<img src="img/troops/healer_50.jpg">
+									<img src="img/troops/dragon_50.jpg">
+									<img src="img/troops/pekka_50.jpg">
+								</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>Amount</td>
+								<td>Name</td>
+								<td>Elexir</td>
+							</tr>
+							<tr>
+								<td><img src="img/troops/barbarian_50.jpg" width="25"></td>
+								<td>5x</td>
+								<td>Barbarian</td>
+								<td>50</td>
+							</tr>
+							<tr>
+								<td><img src="img/troops/archer_50.jpg" width="25"></td>
+								<td>500x</td>
+								<td>Archer</td>
+								<td>500000</td>
 							</tr>
 						</table>
 					</div>
@@ -69,9 +105,14 @@
 		<script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="js/vendor/underscore.js"></script>
 
-		<script type="text/javascript" src="js/Template.js"></script>
+		<!--<script type="text/javascript" src="js/Template.js"></script>
 		<script type="text/javascript" src="js/avatar.js"></script>
-		<script type="text/javascript" src="js/controllers/barracks-controller.js"></script>
-		<script type="text/javascript" src="js/scripts.js"></script>
+		<script type="text/javascript" src="js/controllers/barracks-controller.js"></script>-->
+
+		<script type="text/javascript" src="js/troops/Unit.js"></script>
+		<script type="text/javascript" src="js/troops/Barbarian.js"></script>
+		<script type="text/javascript" src="js/troops/Archer.js"></script>
+		<script type="text/javascript" src="js/Collections/TroopCollection.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
 	</body>
 </html>
