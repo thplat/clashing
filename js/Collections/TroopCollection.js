@@ -9,8 +9,8 @@ TroopCollection.prototype.add = function(troops){
 
 	var troops = troops instanceof Array ? troops : [troops];
 
-	if(this.troops.length + troops.length > this.maxSize){
-		throw "Maximum collection size exceeded";
+	if(this.getTroopSize(troops) + this.getTroopSize(this.troops) > this.maxSize){
+		throw new Error("Maximum collection size exceeded");
 	}
 
 	this.troops = this.troops.concat(troops);
@@ -32,7 +32,20 @@ TroopCollection.prototype.getItem = function(index){
 
 	return this.troops[index];
 
-}
+};
+
+TroopCollection.prototype.getTroopSize = function(troops){
+
+	var troops = troops instanceof Array ? troops : [troops];
+
+	var currentSize = 0;
+	for(var i = 0; i < troops.length; i++){
+		currentSize += troops[i].getHousingSpace();
+	}
+
+	return currentSize;
+
+};
 
 TroopCollection.prototype.totalTrainingCost = function(){
 

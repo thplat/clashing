@@ -1,17 +1,6 @@
-/*require(["purchase"],function(purchase){
-  purchase.purchaseProduct();
-});*/
+new Avatar('.barbarian', Object.create(Barbarian));
 
-Barbarian.setLevel(6);
+/*
+var barracks = new Barracks(10);
 
-var BarbCollection = new TroopCollection(5);
-
-BarbCollection.add([
-	new Barbarian(),
-	new Barbarian(),
-	new Barbarian(),
-	new Barbarian(),
-	new Barbarian(),
-]);
-
-console.log(BarbCollection.totalDps());
+barracks.create(new Barbarian());*/

@@ -15,7 +15,7 @@
 			<div class="row">
 				
 				<div class="col-md-1">
-					<div class="avatar-wrapper archer"></div>
+					<div class="avatar-wrapper barbarian"></div>
 				</div>
 
 			</div>
@@ -109,10 +109,20 @@
 		<script type="text/javascript" src="js/avatar.js"></script>
 		<script type="text/javascript" src="js/controllers/barracks-controller.js"></script>-->
 
-		<script type="text/javascript" src="js/troops/Unit.js"></script>
-		<script type="text/javascript" src="js/troops/Barbarian.js"></script>
-		<script type="text/javascript" src="js/troops/Archer.js"></script>
+		<!-- Generics -->
 		<script type="text/javascript" src="js/Collections/TroopCollection.js"></script>
+		<script type="text/javascript" src="js/CoC/Troops/Unit.js"></script>
+
+		<!-- Specifics -->
+		<script type="text/javascript" src="js/CoC/Buildings/Barracks.js"></script>
+		<script type="text/javascript" src="js/CoC/Troops/Barbarian.js"></script>
+		<script type="text/javascript" src="js/CoC/Troops/Archer.js"></script>
+
+		<!-- UI -->
+		<script type="text/javascript" src="js/lib/Template.js"></script>
+		<script type="text/javascript" src="js/DOM/Avatar.js"></script>
+		
+
 		<script type="text/javascript" src="js/main.js"></script>
 	</body>
 </html>

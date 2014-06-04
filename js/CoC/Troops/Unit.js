@@ -20,3 +20,7 @@ Unit.setLevel = function(level){
 Unit.prototype.getLevel = function(){
 	return this.level+1;
 }
+
+Unit.prototype.getHousingSpace = function(){
+	return this.housingSpace;
+}

@@ -1,10 +1,8 @@
 function Archer(){
-	
-	this.level = Archer.level || 0;
 
 	this.name = 'Archer';
 	this.maxLevel = 6;
-	this.houseingSpace = 1;
+	this.housingSpace = 1;
 	this.trainingTime = 250;
 
 	this.dps = [8,11,14,18,23,26];
@@ -14,6 +12,8 @@ function Archer(){
 }
 
 Archer.prototype = new Unit();
+Archer.prototype.level = 0;
+
 Archer.setLevel = function(level){
-	Archer.level = level-1;
+	Archer.prototype.level = level-1;
 }
